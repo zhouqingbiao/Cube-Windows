@@ -11,7 +11,7 @@ public class Test extends JFrame {
     String f2l = "F2L";
     String oll = "OLL";
     String pll = "PLL";
-    String resource = "./RUBIK/";
+    String resource = "RUBIK" + File.separator;
 
     public void init() {
         // 使用BorderLayout方便JLabel水平垂直居中
@@ -81,7 +81,8 @@ public class Test extends JFrame {
             cfop = oll;
         }
         // 有可能NullPointerException，未作处理。
-        File file = new File(this.getClass().getClassLoader().getResource(resource + cfop).getPath());
+        File file = new File(resource + cfop);
+        // File file = new File(this.getClass().getClassLoader().getResource(resource + cfop).getPath());
         File[] files = file.listFiles();
         Random random = new Random();
         // 有可能NullPointerException，未作处理。
