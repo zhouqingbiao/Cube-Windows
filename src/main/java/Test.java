@@ -80,9 +80,13 @@ public class Test extends JFrame {
         if (cfop == null) {
             cfop = oll;
         }
-        // 有可能NullPointerException，未作处理。
+        // jar包使用
         File file = new File(resource + cfop);
+
+        // 调试时使用
+        // 有可能NullPointerException，未作处理。
         // File file = new File(this.getClass().getClassLoader().getResource(resource + cfop).getPath());
+
         File[] files = file.listFiles();
         Random random = new Random();
         // 有可能NullPointerException，未作处理。
