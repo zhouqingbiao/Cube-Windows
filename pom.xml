@@ -20,7 +20,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Test</mainClass>
+                            <mainClass>Cube</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
