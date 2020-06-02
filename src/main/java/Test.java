@@ -16,7 +16,7 @@ public class Test {
         File file = new File(this.getClass().getClassLoader().getResource(cfop).getPath());
         System.out.print(cfop + "s" + "=");
         for (File f : file.listFiles()) {
-            System.out.print(f.getName() + "#");
+            System.out.print(f.getName().toLowerCase() + "#");
         }
         System.out.println();
     }
