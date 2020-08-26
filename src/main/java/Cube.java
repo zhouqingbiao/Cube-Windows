@@ -9,7 +9,12 @@ import java.util.Properties;
 import java.util.Random;
 
 public class Cube extends JFrame {
-    // JLabel在此定义
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	// JLabel在此定义
     // 须重复使用
     JLabel label = new JLabel("", JLabel.CENTER);
 
